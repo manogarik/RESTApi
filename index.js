@@ -9,6 +9,7 @@ const bodyParser = require("body-parser");
 
 const users = require("./data/users");
 const posts = require("./data/posts");
+const comments = require("./data/comments")
 
 const app = express();
 const port = 3000;
@@ -93,6 +94,7 @@ app
     res.json(post);
     return;
    }
+   
   res.json(posts);
    
   })
@@ -157,6 +159,15 @@ app
   if (post) res.json(post);
   else next();
 })
+//Creating Comments
+app
+.route("/api/comments")
+.get((req,res)=>
+{
+  res.json(comments);
+})
+.post
+
 
 
 app.get("/", (req, res) => {
