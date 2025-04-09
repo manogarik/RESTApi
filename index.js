@@ -85,8 +85,19 @@ app
 app
   .route("/api/posts")
   .get((req, res) => {
-    res.json(posts);
+   const {userId} = req.query;
+   const post = posts.filter((p)=> p.userId == userId);
+   //This route uses a "userId" query parameter to filter posts, while the one above uses a route parameter.
+   if(userId)
+   {
+    res.json(post);
+    return;
+   }
+  res.json(posts);
+   
   })
+
+    
   .post((req, res) => {
     // Within the POST request route, we create a new
     // post with the data given by the client.
@@ -146,6 +157,8 @@ app
   if (post) res.json(post);
   else next();
 })
+
+
 app.get("/", (req, res) => {
   res.send("Work in progress!");
 });
