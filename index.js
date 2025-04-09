@@ -166,8 +166,54 @@ app
 {
   res.json(comments);
 })
-.post
+.post((req, res) => {
+  // Within the POST request route, we create a new
+  // user with the data given by the client.
+  // We should also do some more robust validation here,
+  // but this is just an example for now.
+  if (req.body.userId && req.body.postId && req.body.body) {
+    
+    const comment = {
+      id: comments[comments.length - 1].id + 1,
+      userId: req.body.userId,
+      postId: req.body.postId,
+      body: req.body.body,
+    };
 
+    comments.push(comment);
+    res.json(comments[comments.length - 1]);
+  } else res.json({ error: "Insufficient Data" });
+});
+
+//get comment by specific id
+app.route("/api/comments/:id")
+.get((req,res,next)=>
+{
+  const comment = comments.find((c)=> c.id == req.params.id)
+  if(comment)
+    res.json(comment)
+  else
+    next();
+})
+.patch((req,res,next)=>
+{
+  const comment = comments.find((c,i)=>
+  {
+    if(c.id == req.params.id)
+    {
+      for(const key in req.body)
+      {
+        comments[i][key] = req.body[key]
+      }
+      return true;
+    }
+
+  })
+  if(comment)
+    res.json(comment);
+  else
+    next();
+})
 
 
 app.get("/", (req, res) => {
