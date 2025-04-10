@@ -10,65 +10,64 @@ const posts = [
     {
       id: 1,
       userId: 1,
-      title: "est et quae odit qui non",
+      title: "Inflation and economic growth remain key concerns, with potential policy shifts. ",
       content:
-        "similique esse doloribus nihil accusamus\nomnis dolorem fuga consequuntur reprehenderit fugit recusandae temporibus\nperspiciatis cum ut laudantium\nomnis aut molestiae vel vero",
-    },
+      "US inflation cooled to a six-month low in March, but tariff pressures are quickly mounting"   },
     {
       id: 2,
       userId: 1,
-      title: "quasi id et eos tenetur aut quo autem",
+      title: "Here's when iPhones may get more expensive",
       content:
-        "eum sed dolores ipsam sint possimus debitis occaecati\ndebitis qui qui et\nut placeat enim earum aut odit facilis\nconsequatur suscipit necessitatibus rerum sed inventore temporibus consequatur",
+      "President Donald Trump's tariffs on foreign goods - specifically those sourced from China - are expected to heighten the prices of everyday tech products, from iPhones to laptops, cars and even smaller gadgets like headphones and computer mice"
     },
     {
       id: 3,
       userId: 1,
-      title: "delectus ullam et corporis nulla voluptas sequi",
+      title: "Trump to extend TikTok ban enforcement deadline after China tariffs derail deal",
       content:
-        "non et quaerat ex quae ad maiores\nmaiores recusandae totam aut blanditiis mollitia quas illo\nut voluptatibus voluptatem\nsimilique nostrum eum",
+        "President Donald Trump announced on Friday that he will again postpone enforcement of the TikTok sale-or-ban law for 75 days",
     },
     {
       id: 4,
       userId: 2,
-      title: "iusto eius quod necessitatibus culpa ea",
+      title: "AI might be scanning your resume. Here's what job hunters should know",
       content:
-        "odit magnam ut saepe sed non qui\ntempora atque nihil\naccusamus illum doloribus illo dolor\neligendi repudiandae odit magni similique sed cum maiores",
+        "With some job postings attracting hundreds or thousands of applications, companies are increasingly using AI to sort through applicants before they reach a human recruiter",
     },
     {
       id: 5,
       userId: 2,
-      title: "a quo magni similique perferendis",
+      title: "US stocks skyrocket higher after Trump signals shift in trade policy",
       content:
-        "alias dolor cumque\nimpedit blanditiis non eveniet odio maxime\nblanditiis amet eius quis tempora quia autem rem\na provident perspiciatis quia",
+      "US stocks skyrocketed higher after President Donald Trump announced that he authorized a 90-day pause on the “reciprocal” tariffs that had gone into effect Wednesday, with the exception of China"
     },
     {
       id: 6,
       userId: 2,
-      title: "ullam ut quidem id aut vel consequuntur",
+      title: "Prices are rising. See how much the cost of basic grocery items has changed",
       content:
-        "debitis eius sed quibusdam non quis consectetur vitae\nimpedit ut qui consequatur sed aut in\nquidem sit nostrum et maiores adipisci atque\nquaerat voluptatem adipisci repudiandae",
+        "The cost of food in the US increased significantly amid the Covid-19 pandemic and the steep inflation that followed. While prices have stabilized more recently, new factors have already driven up the costs for eggs and threaten to increase them for other common household foods",
     },
     {
       id: 7,
       userId: 3,
-      title: "doloremque illum aliquid sunt",
+      title: "Car prices will go up. Taking the train or a bus looks like a bargain",
       content:
-        "deserunt eos nobis asperiores et hic\nest debitis repellat molestiae optio\nnihil ratione ut eos beatae quibusdam distinctio maiores\nearum voluptates et aut adipisci ea maiores voluptas maxime",
+        "President Donald Trump's auto tariffs are expected to lift car prices by thousands of dollars. That's an opportunity for America's trains and buses",
     },
     {
       id: 8,
       userId: 3,
-      title: "qui explicabo molestiae dolorem",
+      title: "Trump announces new auto tariffs in a major trade war escalation",
       content:
-        "rerum ut et numquam laborum odit est sit\nid qui sint in\nquasi tenetur tempore aperiam et quaerat qui in\nrerum officiis sequi cumque quod",
+        "President Donald Trump on Wednesday announced 25% tariffs on all cars shipped to the United States, a significant escalation in a global trade war",
     },
     {
       id: 9,
       userId: 3,
-      title: "magnam ut rerum iure",
+      title: "The US-China trade escalation has no end in sight. Here's why Beijing's not backing down",
       content:
-        "ea velit perferendis earum ut voluptatem voluptate itaque iusto\ntotam pariatur in\nnemo voluptatem voluptatem autem magni tempora minima in\nest distinctio qui assumenda accusamus dignissimos officia nesciunt nobis",
+        "Trump announced a three-month pause Wednesday on all the “reciprocal” tariffs that had gone into effect hours earlier - with one exception, deepening a confrontation set to dismantle trade between the world's two largest economies",
     },
   ];
   

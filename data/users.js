@@ -9,22 +9,28 @@
 const users = [
     {
       id: 1,
-      name: "Carey",
-      username: "cyare23",
-      email: "cy23@example.com",
+      name: "Mano",
+      username: "mano1998",
+      email: "manoguru768@gmail.com",
     },
     {
       id: 2,
-      name: "Mikoto",
-      username: "Miiko",
-      email: "mikoto_u@example.com",
+      name: "Karthik",
+      username: "karthik1992",
+      email: "karthiknc@gmail.com",
     },
     {
       id: 3,
-      name: "Ronald",
-      username: "RonRonRon",
-      email: "mronald@example.com",
+      name: "Viji",
+      username: "viji1977",
+      email: "vijiguru@gmail.com",
     },
+    {
+      id: 4,
+      name: "Sivakami",
+      username: "siva1999",
+      email: "sivakamikmr@gmail.com",
+    }
   ];
   
   module.exports = users;
