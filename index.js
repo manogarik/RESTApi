@@ -162,9 +162,32 @@ app
 //Creating Comments
 app
 .route("/api/comments")
-.get((req,res)=>
+.get((req,res,next)=>
 {
-  res.json(comments);
+  const {userId,postId} = req.query;
+  //Retrieves comments by the user with the specified userId.
+  if(userId)
+  {
+    const comment = comments.find((c)=> c.userId == userId);
+    if(comment)
+      res.json(comment)
+    else
+      next();
+    
+
+  }
+  //Retrieves comments made on the post with the specified postId.
+  else if(postId)
+  {
+    const comment = comments.find((c)=> c.postId == postId);
+    if(comment)
+      res.json(comment)
+    else
+      next();
+    
+  }
+  else
+    res.json(comments);
 })
 .post((req, res) => {
   // Within the POST request route, we create a new
@@ -185,7 +208,7 @@ app
   } else res.json({ error: "Insufficient Data" });
 });
 
-//get comment by specific id
+//Retrieves the comment with the specified id.
 app.route("/api/comments/:id")
 .get((req,res,next)=>
 {
@@ -195,6 +218,7 @@ app.route("/api/comments/:id")
   else
     next();
 })
+//Used to update a comment with the specified id with a new body.
 .patch((req,res,next)=>
 {
   const comment = comments.find((c,i)=>
@@ -208,6 +232,24 @@ app.route("/api/comments/:id")
       return true;
     }
 
+  })
+  if(comment)
+    res.json(comment);
+  else
+    next();
+})
+
+//Used to delete a comment with the specified id.
+.delete((req,res,next)=>
+{
+  const comment = comments.find((c,i)=>
+  {
+    if(c.id == req.params.id)
+    {
+      comments.splice(i,1);
+      return true;
+    }
+    
   })
   if(comment)
     res.json(comment);
